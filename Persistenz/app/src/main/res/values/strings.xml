@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Persistenz</string>
-    <string name="artificial">Assugrin</string>
-    <string name="refined">Kristallzucker</string>
-    <string name="natural">Rohrzucker</string>
-    <string name="Titel">HSLU Mobile Programming</string>
-
+    <string name="counterText">MainActivity.onResume() wurde seit der Installation dieser App %o mal aufgerufen</string>
+    <string name="teaPrefText">Ich trinke am liebsten %s %s.</string>
+    <string name="teaSweetener">mit %s gesüsst</string>
 </resources>

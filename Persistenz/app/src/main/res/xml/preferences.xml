@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory
-        android:key="teaPrefs"
-        android:title="Tee Präferenzen">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:key="teaPrefs"
+    android:title="Tee Präferenzen">
     <CheckBoxPreference
         android:key="teaWithSugar"
         android:persistent="true"
-        android:summary="Soll der Tee gesüst werden?"
-        android:title="Gesüsster Tee?"/>
-
+        android:summary="Soll der Tee gesüsst werdern?"
+        android:title="Gesüsster Tee">
+    </CheckBoxPreference>
     <ListPreference
+        android:defaultValue="1"
         android:dependency="teaWithSugar"
         android:entries="@array/teaSweetener"
         android:entryValues="@array/teaSweetenerValues"
         android:key="teaSweetener"
         android:persistent="true"
         android:shouldDisableView="true"
-        android:summary="Womit soll der Tee gesüst werden?"
-        android:title="Süssstoff"/>
-
-     <EditTextPreference
-         android:key="teaPreferred"
-         android:persistent="true"
-         android:summary="z.B. &quot; Lipton/Pfefferminztee &quot;"
-         android:title="Bevorzugte Marke/Sorte"/>
-
-
-    </PreferenceCategory>
+        android:summary="Womit soll der Tee gesüsst werden?"
+        android:title="Süssstoff" />
+    <EditTextPreference
+        android:defaultValue="Pfefferminztee"
+        android:key="teaPreferred"
+        android:persistent="true"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="z.B Lipton/Pfefferminztee"
+        android:title="Bevorzugte Marke/Sorte" />
 
 </PreferenceScreen>
