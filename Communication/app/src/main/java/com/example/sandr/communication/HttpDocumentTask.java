@@ -22,24 +22,14 @@ public class HttpDocumentTask extends AsyncTask<URL, Void, String>{
 
     @Override
     protected String doInBackground(URL... urls) {
-        StringBuilder builder = new StringBuilder();
-
         try {
             InputStream stream = HttpUtil.openHttpConnection(urls[0]);
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(stream));
-
-            String line;
-            while((line = bufferedReader.readLine()) != null){
-                builder.append(line);
-                builder.append("\n");
-            }
-
-            bufferedReader.close();
+            return BufferUtil.readText(stream);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return builder.toString();
+        return "";
     }
 
     @Override
