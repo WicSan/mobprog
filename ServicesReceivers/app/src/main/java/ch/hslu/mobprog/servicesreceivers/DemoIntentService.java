@@ -3,6 +3,7 @@ package ch.hslu.mobprog.servicesreceivers;
 import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
@@ -15,19 +16,20 @@ import android.util.Log;
 public class DemoIntentService extends IntentService {
     private int count = 0;
 
-    /**
-     * Creates an IntentService.  Invoked by your subclass's constructor.
-     *
-     * @param name Used to name the worker thread, important only for debugging.
-     */
-    public DemoIntentService(String name) {
-        super(name);
+    public DemoIntentService(){
+        super("DemoIntentService");
     }
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
-        Log.e("HSLU Mobprog", "Start command:" + count);
-        new DemoTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        count++;
+        Log.e("HSLU Mobprog", String.format("Job#%d started", count));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Log.e("HSLU Mobprog", String.format("Job#%d finished", count));
     }
 
     @Override
