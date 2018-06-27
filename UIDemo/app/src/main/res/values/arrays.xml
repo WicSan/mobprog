@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DialogOptions">
+        <item>-</item>
+        <item>Dialog mit Rückgabe</item>
+        <item>Dialog mit Auswahl-Daten</item>
+    </string-array>
+    <string-array name="Drinks">
+        <item>Kaffee</item>
+        <item>Tee</item>
+        <item>Wasser</item>
+    </string-array>
+</resources>

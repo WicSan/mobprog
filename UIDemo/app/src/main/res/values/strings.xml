@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UI-Demo</string>
+    <string name="rbLinearLayout">LinearLayout</string>
+    <string name="rbRelativeLayout">RelativeLayout</string>
+    <string name="txtLayouts">Wähle eines der folgenden Layouts.</string>
+    <string name="order">Bestellung</string>
+    <string name="product">Product-ID</string>
+    <string name="amount">Menge</string>
+    <string name="calculate">Berechnen</string>
+    <string name="special">Sondertarif</string>
+    <string name="price">Preisangabe</string>
+    <string name="layouts">Layouts</string>
+    <string name="views_events">Views und Events</string>
+    <string name="btndisplay">Aktivity mit View-Demo</string>
+    <string name="options">Options-Menu</string>
+    <string name="btnState">Internen Zustand hochzählen</string>
+    <string name="orientation">Diese App hat eine angepasste Ansicht für den Landescape Modus.</string>
+    <string name="orientationTitle">Screen-Orientation und Übersetzung</string>
+    <string name="txtcounter">Zustand-Zwischenspeicherung</string>
+    <string name="txtDialogs">Dialoge und Notifications</string>
+    <string name="txtchoose">Wähle ein Beispiel</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UI-Demo</string>
+    <string name="txtLayouts">Wäl eis vo de folgende Leyouts för ne Demo:</string>
+    <string name="order">Bestellig</string>
+    <string name="btnState">Interne Zustand ufezelle</string>
+    <string name="rbLinearLayout">LinearLeyout</string>
+    <string name="rbRelativeLayout">RelativsLeyout</string>
+    <string name="btndisplay">Azeige vo de Views-Demo</string>
+    <string name="orientation">Die App hed ein apassti Asecht för de Landscape-Modus.</string>
+</resources>
